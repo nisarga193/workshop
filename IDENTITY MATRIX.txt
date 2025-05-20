@@ -1,0 +1,18 @@
+IDENTITY MATRIX
+
+rows=int(input("enter the number of rows:"))
+cols=int(input("enter the number of columns:"))
+sum=[[int(input(f"enter the matrix1 rows{[i+1]} column{[j+1]}:")) for j in range(cols)] for i in range(rows)]
+print("\nsum")
+for rows in sum:
+    print(rows)
+def check(sum):
+    for i in range(len(sum)):
+        for j in range(len(sum[1])):
+            if((i==j)and sum[i][j]!=1):
+                print("not a identity matrix")
+            elif((i!=j) and sum[i][j]!=0):
+                print("not a identity matrix")
+    else:
+        print("matrix is identity matrix")
+print(check(sum))

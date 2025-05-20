@@ -1,0 +1,33 @@
+def sum(a,b):
+    if(a>b):
+       return a+b
+    else:
+       print('none')
+def sub(a,b):
+    if (a<b):
+       return a-b
+    else:
+       print('none')
+def mul(a,b):
+    if(a==b):
+       return a*b
+    else:
+       print('none')
+def div(a,b):
+    if(a>=b):
+       return a/b
+    else:
+       print('none')
+a=int(input('enter the number:'))
+b=int(input('enter the number:'))
+c=int(input('enter the choice:'))
+if(c==1):
+  print(sum(a,b))
+elif (c==2):
+  print(sub(a,b))
+elif(c==3):
+  print(mul(a,b))
+elif(c==4):
+   print(div(a,b))
+else:
+       print('invalid choice')

@@ -1,0 +1,15 @@
+storage=[]
+n=int(input("enter the number of items:"))
+for i in range(n):
+    item=str(input("enter the items:"))
+    storage.append(item)
+print(storage)
+item=str(input("enter the item customer buys and delivered:"))
+if item in storage:
+    storage.remove(item)
+else:
+    print("item not available")
+print(storage)
+item=str(input("enter the extra item to append :"))
+storage.append(item)
+print(str(storage))

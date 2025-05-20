@@ -13,3 +13,27 @@ print(storage)
 item=str(input("enter the extra item to append :"))
 storage.append(item)
 print(str(storage))
+
+
+class student:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    def greet(name,id):
+        print("HELLO, "+name+" !")
+if __name__=="__main__":
+    name=input("what is your name:")
+    id=int(input("enter ur registration id :"))
+    student.greet(name,id)
+
+
+class Person:
+    def owner(item):
+        print(item)
+if __name__=="__main__":
+    p=str(input("wts a owner name ?"))
+    if p=="anesh":
+        Person.owner(p)
+        print(f"{p} is itself a owner")
+    else:
+        print(f"{p} is not a owner")
